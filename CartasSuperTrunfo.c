@@ -11,7 +11,8 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
     //DECLARANDO VARIAVEIS
-    
+    char NomPais[50];
+    char SigEstado;
     char CodCidade[2];
     char NomCidade[50];
     int PopCidade;
@@ -25,6 +26,12 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
     //SOLICITANDO ENTRADA DE INFORMAÇÕES POR PARTE DO USUÁRIO PARA CADASTRO DAS CARTAS
+    printf("Informe o nome do País que deseja cadastrar: ");
+    scanf("%s", &NomPais);
+
+    printf("Informe o sigla equivalente ao estado que deseja cadastrar valores entre A a H: ");
+    scanf("%c", &SigEstado);
+
     printf("Informe o código da cidade sendo ele (01, 02, 03 ou 04): ");
     scanf("%s", &CodCidade);
 
